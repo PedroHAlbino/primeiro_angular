@@ -11,6 +11,10 @@ import { ListarPensamentosComponent } from './components/pensamentos/listar-pens
 
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { PensamentoComponent } from './components/pensamentos/pensamento/pensamento.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ExcluirComponent } from './components/pensamentos/excluir/excluir.component';
+import { EditarComponent } from './components/pensamentos/editar/editar.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +23,17 @@ import { AppRoutingModule } from './app-routing.module';
     CabecalhoComponent,
     RodapeComponent,
     CriarPensamentoComponent,
-    ListarPensamentosComponent
+    ListarPensamentosComponent,
+    PensamentoComponent,
+    ExcluirComponent,
+    EditarComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
